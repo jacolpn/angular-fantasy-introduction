@@ -1,0 +1,80 @@
+:root {
+  --color-font-white: #FFF;
+  --color-white: #F0F0F7;
+  --color-grey-light: #9C98A6;
+  --color-grey: #6A6180;
+  --color-black: #303030;
+  --color-black-light: #444;
+  --color-blue: #1976d2;
+  --color-blue-dark: #0d47a1;
+  --color-background-black-dark: #070114;
+  --color-background-black-light: #0c0120;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: 'Inconsolata', monospace !important;
+}
+
+html {
+    background: linear-gradient(-45deg, var(--color-background-black-dark), var(--color-background-black-light));
+    background-size: 1500% 1500%;
+    animation: gradient 15s ease-in-out infinite;
+    color: var(--color-font-white);
+}
+
+button {
+  padding: 1em 2em;
+  cursor: pointer;
+  display: inline-block;
+  outline-style: none;
+  line-height: 1;
+  border: 0;
+  border-radius: .2em;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 .1em inset;
+  background: linear-gradient(-45deg, var(--color-blue-dark), var(--color-blue));
+  background-size: 100% 100%;
+  animation: gradient 5s ease-in-out infinite;
+  z-index: 9;
+  color: var(--color-font-white);
+}
+
+button:hover {
+  background: linear-gradient(-45deg, var(--color-black-light), var(--color-blue));
+  animation: gradient 5s ease-in-out infinite;
+}
+
+input {
+  height: 1.8em;
+  width: 94%;
+  background-color: var(--color-grey-light);
+  padding-left: .7em;
+  color: var(--color-font-white);
+  font-weight: 600;
+  z-index: 9;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  border-radius: .2em;
+}
+
+input::placeholder {
+  color: var(--color-font-white);
+  opacity: 0.5;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 50% 0%;
+  }
+}

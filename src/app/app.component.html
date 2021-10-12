@@ -1,0 +1,32 @@
+<section>
+  <div class="container">
+    <div class="container-camera">
+      <div class="phone-top">
+        <div class="phone-sound"></div>
+        <div class="phone-camera"></div>
+      </div>
+    </div>
+
+    <div class="phone-contents">
+      <p class="ballon-text">{{ texto }}</p>
+
+      <input [placeholder]="texto" [class.success]="true" [(ngModel)]="texto">
+
+      <div class="container-button-phone">
+        <button (click)="onClear()" class="button-phone">Limpar</button>
+      </div>
+
+      <p class="secondary-ballon-text">
+        Para baixar o projeto, basta copiar ou clicar no link do GitHub abaixo:
+      </p>
+
+      <a
+        href="https://github.com/jacolpn/angular-fantasy-introduction"
+        target="_blank"
+        class="link-ballon-text"
+      >
+        https://github.com/jacolpn/angular-fantasy-introduction
+      </a>
+    </div>
+  </div>
+</section>

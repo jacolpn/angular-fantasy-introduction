@@ -1,0 +1,110 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: 31em;
+  width: 16em;
+  background-color: var(--color-white);
+  border-radius: 3em;
+  z-index: 2;
+  border: .9em solid var(--color-grey-light);
+  display: grid;
+  justify-content: center;
+  animation: start-phone 1.6s ease-in-out backwards;
+}
+
+.container-camera {
+  display: flex;
+  justify-content: center;
+}
+
+.phone-top {
+  background-color: var(--color-grey-light);
+  width: 8em;
+  height: 1.3em;
+  position: absolute;
+  margin-top: -.4em;
+  border-radius: 0 0 1em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-sound {
+  width: 2.5em;
+  height: .3em;
+  border-radius: .3em;
+  margin-right: .5em;
+  opacity: .6;
+  background-color: var(--color-grey);
+}
+
+.phone-camera {
+  width: .3em;
+  height: .3em;
+  border-radius: .3em;
+  opacity: .6;
+  background-color: var(--color-grey);
+}
+
+.phone-contents {
+  width: 14em;
+  height: 27em;
+  margin-top: 1em;
+  word-wrap: break-word;
+}
+
+.ballon-text {
+  color: var(--color-grey);
+  font-weight: 900;
+  margin-bottom: .6em;
+  margin-left: .05em;
+  z-index: 9;
+}
+
+.container-button-phone {
+  text-align: right;
+}
+
+.button-phone {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.secondary-ballon-text {
+  color: var(--color-grey);
+  text-align: justify;
+  margin: 2em 0 .5em 0;
+  z-index: 9;
+}
+
+.link-ballon-text {
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.link-ballon-text:hover {
+  color: var(--color-blue-dark);
+}
+
+.success {
+  border: 2px solid var(--color-blue);
+}
+
+.success:hover {
+  border: 2px solid var(--color-blue-dark);
+}
+
+@keyframes start-phone {
+  0% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
