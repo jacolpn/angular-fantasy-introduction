@@ -1,4 +1,4 @@
-# AngularFantasyIntroduction
+# Angular Fantasy Introduction
 Projeto criado com [Angular CLI](https://github.com/angular/angular-cli) versão 12.0.3.
 
 ## Development server
